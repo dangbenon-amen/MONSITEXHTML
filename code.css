@@ -1,0 +1,112 @@
+/* === STYLE GLOBAL === */
+body {
+  background-color: #f9f9fb;
+  font-family: "Segoe UI", Arial, sans-serif;
+  color: #222;
+  margin: 40px;
+  line-height: 1.6;
+}
+
+h2 {
+  color: #0056b3;
+  border-left: 5px solid #007bff;
+  padding-left: 10px;
+  margin-top: 40px;
+  text-transform: uppercase;
+}
+
+p {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+/* === STYLE GÉNÉRAL DES LISTES === */
+ul, ol, dl {
+  margin-left: 40px;
+}
+
+li {
+  margin-bottom: 6px;
+}
+
+/* === LISTES AVEC OU SANS RETRAIT === */
+.retrait {
+  margin-left: 40px; /* retrait par défaut */
+}
+
+.pas_de_retrait {
+  margin-left: 0; /* pas de retrait */
+}
+
+/* === LISTES NON ORDONNÉES === */
+.cercle {
+  list-style-type: circle;
+}
+
+.carre {
+  list-style-type: square;
+}
+
+.rien {
+  list-style-type: none;
+}
+
+/* === LISTES ORDONNÉES === */
+.commence_a_zero {
+  list-style-type: decimal-leading-zero;
+}
+
+.lettres_minuscules {
+  list-style-type: lower-alpha;
+}
+
+.chiffres_romains {
+  list-style-type: upper-roman;
+}
+
+.lettres_grecques {
+  list-style-type: lower-greek;
+}
+
+/* === LISTES DE DÉFINITION (dl, dt, dd) === */
+dl {
+  margin-left: 30px;
+  background-color: #f2f6fc;
+  padding: 15px;
+  border-radius: 10px;
+  border: 1px solid #ddd;
+}
+
+dt {
+  font-weight: bold;
+  color: #003366;
+  margin-top: 10px;
+}
+
+dd {
+  margin-left: 20px;
+  color: #555;
+}
+
+/* === EFFETS SUPPLÉMENTAIRES === */
+em {
+  color: #0066cc;
+}
+
+strong {
+  color: #222;
+}
+
+/* === AJOUT D’UN STYLE LÉGER AUX PUCE ET LISTE === */
+ul li::marker, ol li::marker {
+  color: #007bff;
+  font-weight: bold;
+}
+
+/* === PETIT EFFET DE SURVOL === */
+li:hover {
+  background-color: #eef3fa;
+  transition: background-color 0.3s ease;
+  border-radius: 6px;
+  padding-left: 4px;
+}

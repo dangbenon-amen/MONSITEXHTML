@@ -1,0 +1,53 @@
+/* === STYLE GLOBAL === */
+body {
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(135deg, #ffe6f0, #ffd6e8); /* dégradé rose pastel */
+    font-family: 'Poppins', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* === LISTE DU MENU === */
+.menu {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+/* === BOUTONS FEMININS === */
+.menu li a {
+    display: block;
+    text-decoration: none;
+    color: #fff;
+    background: linear-gradient(135deg, #f9a3c4, #e75480); /* dégradé rose vif → foncé */
+    padding: 15px 45px;
+    border-radius: 25px;
+    font-weight: 700;
+    font-size: 18px;
+    width: 220px;
+    text-align: center;
+    box-shadow: 0 6px 15px rgba(231, 84, 128, 0.3); /* ombre douce rose */
+    transition: all 0.3s ease;
+    text-shadow: 1px 1px 2px rgba(0,0,0,0.1);
+}
+
+/* === EFFET AU SURVOL === */
+.menu li a:hover {
+    background: linear-gradient(135deg, #e75480, #c63b67); /* rose foncé */
+    transform: translateY(-4px);
+    box-shadow: 0 8px 18px rgba(198, 59, 103, 0.4);
+}
+
+/* === EFFET D’APPUIS === */
+.menu li a:active {
+    transform: scale(0.97);
+    box-shadow: 0 4px 10px rgba(198, 59, 103, 0.3);
+}
+

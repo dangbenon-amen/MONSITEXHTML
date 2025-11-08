@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <title>Bienvenue - Amen Dangbenon</title>
+  <style>
+    /* === STYLE GLOBAL === */
+    body {
+      margin: 0;
+      padding: 0;
+      background: linear-gradient(135deg, #ffe6f0, #ffd6e8);
+      font-family: 'Poppins', sans-serif;
+      color: #5a2a3c;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    /* === HEADER === */
+    header {
+      width: 100%;
+      max-width: 900px;
+      padding: 30px 20px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .logos {
+      display: flex;
+      justify-content: space-between;
+      width: 100%;
+      margin-bottom: 30px;
+    }
+
+    .logos img {
+      width: 150px;
+      border-radius: 10px;
+      box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+      transition: transform 0.3s ease;
+    }
+
+    .logos img:hover {
+      transform: scale(1.05);
+      box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+    }
+
+    /* Photo avec touche féminine */
+    .photo-container {
+      position: relative;
+      display: inline-block;
+      margin-bottom: 20px;
+    }
+
+    .photo-container::before {
+      content: "🌸";
+      position: absolute;
+      top: -20px;
+      left: -20px;
+      font-size: 2em;
+      opacity: 0.7;
+    }
+
+    .photo-container::after {
+      content: "🌸";
+      position: absolute;
+      bottom: -20px;
+      right: -20px;
+      font-size: 2em;
+      opacity: 0.7;
+    }
+
+    .photo {
+      width: 200px;
+      height: 200px;
+      object-fit: cover;
+      border-radius: 50%;
+      border: 5px solid #ffe6f0;
+      box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+      transition: transform 0.4s ease, box-shadow 0.4s ease;
+    }
+
+    .photo:hover {
+      transform: scale(1.05);
+      box-shadow: 0 15px 30px rgba(0,0,0,0.3);
+    }
+
+    h1 {
+      font-size: 2.8em;
+      margin-bottom: 10px;
+      color: #e75480;
+    }
+
+    h2 {
+      font-size: 1.5em;
+      color: #c63b67;
+      margin-bottom: 40px;
+    }
+
+    main {
+      max-width: 700px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      width: 100%;
+      padding: 0 20px;
+    }
+
+    .section {
+      background-color: white;
+      border-radius: 25px;
+      box-shadow: 0 6px 20px rgba(0,0,0,0.1);
+      padding: 25px 30px;
+      margin-bottom: 30px;
+      width: 100%;
+      text-align: center;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .section:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 12px 25px rgba(0,0,0,0.2);
+    }
+
+    .section h3 {
+      color: #e75480;
+      margin-bottom: 15px;
+      border-bottom: 2px solid #ffd6e8;
+      padding-bottom: 5px;
+    }
+
+    p, ul {
+      line-height: 1.7;
+    }
+
+    ul {
+      list-style-type: square;
+      padding-left: 0;
+      margin: 0 auto;
+      display: inline-block;
+      text-align: left;
+    }
+
+    li {
+      margin-bottom: 8px;
+    }
+
+    .email a {
+      color: #e75480;
+      text-decoration: none;
+      font-weight: bold;
+      transition: transform 0.3s, color 0.3s;
+    }
+
+    .email a:hover {
+      color: #c63b67;
+      transform: scale(1.1);
+    }
+
+    footer {
+      text-align: center;
+      color: #944c64;
+      padding: 20px;
+      font-size: 14px;
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- === HEADER === -->
+  <header>
+    <div class="logos">
+      <a href="https://enseignementsuperieur.gouv.bj/" target="_blank">
+        <img src="ministry-of-secondary-education-and-technical-and-vocational-training-benin-180146.jpg" alt="MESRT">
+      </a>
+      <a href="https://www.pigier-benin.com" target="_blank">
+        <img src="pigier-benin.png" alt="Pigier Benin">
+      </a>
+    </div>
+
+    <div class="photo-container">
+     <a href="#extrait"><img src="./photo.jpg" alt="Amen Dangbenon" class="photo"></a> 
+    </div>
+    <h1>Amen Dangbenon</h1>
+    <h2>Étudiante et passionnée de technologie 💖</h2>
+  </header>
+
+  <!-- === MAIN CONTENT === -->
+  <main>
+    <!-- Informations personnelles -->
+    <div class="section">
+      <h3>I - Informations Personnelles</h3>
+      <p><strong>Nom :</strong> DANGBENON</p>
+      <p><strong>Prénom :</strong> Amen</p>
+      <p><strong>Sexe :</strong> Féminin</p>
+      <p><strong>Contact :</strong> 0162336536</p>
+      <p><strong>Email :</strong> <span class="email"><a href="mailto:amendangbenonamen@gmail.com">amendangbenonamen@gmail.com</a></span></p>
+    </div>
+
+    <!-- Formations -->
+    <div class="section">
+      <h3>II - Formations</h3>
+      <ul>
+        <li>CEP</li>
+        <li>BEPC</li>
+        <li>BAC</li>
+      </ul>
+    </div>
+
+    <!-- Loisirs -->
+    <div class="section">
+      <h3>III - Loisirs</h3>
+      <ul>
+        <li>Voyager</li>
+        <li>Danser</li>
+        <li>Chanter</li>
+      </ul>
+    </div>
+
+    <!-- Situation professionnelle -->
+    <div class="section">
+      <h3>IV - Situation Professionnelle</h3>
+      <p id="extrait">
+        Je suis étudiante en deuxième année de Réseaux et Génie Logiciel à Pigier.
+        Ma formation me permet de concevoir des sites web dynamiques et attrayants, tout en développant des compétences en conception de logiciels et d’applications mobiles.
+        J’ai appris à configurer des commutateurs et routeurs Cisco, ainsi qu’à concevoir des câbles droits et croisés selon les normes A et B.
+        Je me forme également dans plusieurs langages de programmation tels que HTML, CSS et PHP.
+        À l’avenir, je souhaite me spécialiser davantage dans l’administration réseau afin de bien débuter ma carrière professionnelle.
+      </p>
+    </div>
+  </main>
+
+  <!-- FOOTER -->
+  <footer>
+    © 2025 Amen Dangbenon
+  </footer>
+
+</body>
+</html>

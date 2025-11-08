@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<title>Exemples de listes - Style Féminin</title>
+<style>
+  body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(135deg, #ffe6f0, #ffd6e8);
+    color: #5a2a3c;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  header {
+    text-align: center;
+    padding: 40px 20px 20px 20px;
+  }
+
+  h1 {
+    font-size: 2.5em;
+    color: #e75480;
+    margin-bottom: 10px;
+  }
+
+  h2 {
+    font-size: 1.5em;
+    color: #c63b67;
+    margin-bottom: 30px;
+  }
+
+  main {
+    width: 90%;
+    max-width: 800px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .section {
+    background-color: white;
+    border-radius: 25px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+    padding: 25px 30px;
+    margin-bottom: 30px;
+    width: 100%;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+
+  .section:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 25px rgba(0,0,0,0.2);
+  }
+
+  .section h3 {
+    color: #e75480;
+    margin-bottom: 15px;
+    border-bottom: 2px solid #ffd6e8;
+    padding-bottom: 5px;
+  }
+
+  ul, ol {
+    margin: 15px auto;
+    padding-left: 0;
+    display: inline-block;
+    text-align: left;
+  }
+
+  ul li, ol li {
+    margin-bottom: 8px;
+    line-height: 1.7;
+    padding-left: 8px;
+  }
+
+  /* Styles spécifiques pour les types de listes */
+  .retrait li {
+    padding-left: 20px;
+  }
+
+  .pas_de_retrait li {
+    padding-left: 0;
+  }
+
+  .cercle {
+    list-style-type: circle;
+  }
+
+  .carre {
+    list-style-type: square;
+  }
+
+  .rien {
+    list-style-type: none;
+  }
+
+  .commence_a_zero {
+    list-style-type: decimal-leading-zero;
+  }
+
+  .lettres_minuscules {
+    list-style-type: lower-alpha;
+  }
+
+  .chiffres_romains {
+    list-style-type: upper-roman;
+  }
+
+  .lettres_grecques {
+    list-style-type: lower-greek;
+  }
+
+  p {
+    margin-top: 15px;
+  }
+
+  footer {
+    text-align: center;
+    padding: 20px;
+    font-size: 14px;
+    color: #944c64;
+  }
+</style>
+</head>
+<body>
+
+<header>
+  <h1>Bienvenue sur ma page de listes</h1>
+  <h2>On poursuit !🌸</h2>
+</header>
+
+<main>
+  <div class="section">
+    <h3>Liste simple non ordonnée</h3>
+    <ul>
+      <li>Fraises</li>
+      <li>Framboises</li>
+      <li>Cerises</li>
+    </ul>
+  </div>
+
+  <div class="section">
+    <h3>Liste simple ordonnée</h3>
+    <ol>
+      <li>Je me lève</li>
+      <li>Je mange et je bois</li>
+      <li>Je retourne me coucher</li>
+    </ol>
+  </div>
+
+  <div class="section">
+    <h3>Liste de définitions</h3>
+    <dl>
+      <dt>Chat</dt>
+      <dd>Animal à 4 pattes qui fait "Miaou !"</dd>
+      <dt>Chien</dt>
+      <dd>Animal à 4 pattes qui fait "Ouaf Ouaf !"</dd>
+      <dt>Prof de maths</dt>
+      <dd>Personne qui enseigne des choses que personne ne comprend</dd>
+    </dl>
+  </div>
+
+  <div class="section">
+    <h3>Listes avec retrait ou sans retrait</h3>
+    <p>Avec retrait :</p>
+    <ul class="retrait">
+      <li>Liste<br>à puces</li>
+      <li>Ligne 1<br>Ligne 2</li>
+      <li>Texte décalé</li>
+    </ul>
+    <p>Sans retrait :</p>
+    <ul class="pas_de_retrait">
+      <li>Liste<br>à puces</li>
+      <li>Ligne 1<br>Ligne 2</li>
+      <li>Texte non décalé</li>
+    </ul>
+  </div>
+
+  <div class="section">
+    <h3>Différents styles de listes non ordonnées</h3>
+    <p>Disc (par défaut) :</p>
+    <ul>
+      <li>Liste</li>
+      <li>à</li>
+      <li>puces</li>
+    </ul>
+    <p>Circle :</p>
+    <ul class="cercle">
+      <li>Liste</li>
+      <li>à</li>
+      <li>puces</li>
+    </ul>
+    <p>Square :</p>
+    <ul class="carre">
+      <li>Liste</li>
+      <li>à</li>
+      <li>puces</li>
+    </ul>
+    <p>Sans puces :</p>
+    <ul class="rien">
+      <li>Liste</li>
+      <li>à</li>
+      <li>puces</li>
+    </ul>
+  </div>
+
+  <div class="section">
+    <h3>Différents styles de listes ordonnées</h3>
+    <p>Decimal (par défaut) :</p>
+    <ol>
+      <li>Un</li>
+      <li>Deux</li>
+      <li>Trois</li>
+      <li>Quatre</li>
+    </ol>
+    <p>Decimal-leading-zero :</p>
+    <ol class="commence_a_zero">
+      <li>Un</li>
+      <li>Deux</li>
+      <li>Trois</li>
+      <li>Quatre</li>
+    </ol>
+    <p>Lower-alpha :</p>
+    <ol class="lettres_minuscules">
+      <li>Un</li>
+      <li>Deux</li>
+      <li>Trois</li>
+      <li>Quatre</li>
+    </ol>
+    <p>Upper-roman :</p>
+    <ol class="chiffres_romains">
+      <li>Un</li>
+      <li>Deux</li>
+      <li>Trois</li>
+      <li>Quatre</li>
+    </ol>
+    <p>Lower-greek :</p>
+    <ol class="lettres_grecques">
+      <li>Un</li>
+      <li>Deux</li>
+      <li>Trois</li>
+      <li>Quatre</li>
+    </ol>
+  </div>
+</main>
+
+<footer>
+  © 2025 Amen Dangbenon
+</footer>
+
+</body>
+</html>

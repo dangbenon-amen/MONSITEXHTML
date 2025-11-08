@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <title>Formulaire - Amen Dangbenon</title>
+  <style>
+    /* === STYLE GLOBAL === */
+    body {
+      margin: 0;
+      padding: 0;
+      background: linear-gradient(135deg, #ffe6f0, #ffd6e8); /* fond rose pastel */
+      font-family: 'Poppins', sans-serif;
+      color: #5a2a3c;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+    }
+
+    /* === FORMULAIRE === */
+    form {
+      background-color: white;
+      padding: 30px 40px;
+      border-radius: 25px;
+      box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+      width: 400px;
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+    }
+
+    fieldset {
+      border: 2px solid #e75480;
+      border-radius: 15px;
+      padding: 20px;
+    }
+
+    legend {
+      font-weight: bold;
+      color: #e75480;
+      padding: 0 10px;
+    }
+
+    label {
+      display: block;
+      margin-bottom: 5px;
+      font-weight: 600;
+    }
+
+    input[type="text"], select, textarea {
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 10px;
+      border-radius: 12px;
+      border: 1px solid #ffd6e8;
+      box-shadow: inset 0 2px 4px rgba(0,0,0,0.05);
+      font-family: 'Poppins', sans-serif;
+      font-size: 15px;
+    }
+
+    textarea {
+      resize: vertical;
+    }
+
+    input[type="radio"] {
+      margin-right: 10px;
+    }
+
+    .radio-group label {
+      display: inline-block;
+      margin-right: 15px;
+      font-weight: 500;
+    }
+
+    /* === BOUTON SUBMIT === */
+    input[type="submit"] {
+      background: linear-gradient(135deg, #f9a3c4, #e75480);
+      color: white;
+      font-weight: 700;
+      font-size: 16px;
+      padding: 12px;
+      border: none;
+      border-radius: 25px;
+      cursor: pointer;
+      transition: all 0.3s ease;
+      box-shadow: 0 6px 15px rgba(231, 84, 128, 0.3);
+    }
+
+    input[type="submit"]:hover {
+      background: linear-gradient(135deg, #e75480, #c63b67);
+      transform: translateY(-3px);
+      box-shadow: 0 8px 18px rgba(198, 59, 103, 0.4);
+    }
+
+    input[type="submit"]:active {
+      transform: scale(0.97);
+      box-shadow: 0 4px 10px rgba(198, 59, 103, 0.3);
+    }
+  </style>
+</head>
+<body>
+   s
+
+  <form method="post" action="traitement.php">
+
+    <fieldset>
+      <legend>Vos coordonnées</legend>
+      <label for="nom">Quel est votre nom ?</label>
+      <input type="text" name="nom" id="nom" />
+
+      <label for="prenom">Quel est votre prénom ?</label>
+      <input type="text" name="prenom" id="prenom" />
+
+      <label for="email">Quel est votre e-mail ?</label>
+      <input type="text" name="email" id="email" />
+    </fieldset>
+
+    <fieldset>
+      <legend>Pays de résidence</legend>
+      <label for="pays">Dans quel pays habitez-vous ?</label>
+      <select name="pays" id="pays">
+        <option value="france">France</option>
+        <option value="espagne">Espagne</option>
+        <option value="italie">Italie</option>
+        <option value="royaume-uni">Royaume-Uni</option>
+        <option value="canada">Canada</option>
+        <option value="etats-unis">Etats-Unis</option>
+        <option value="chine">Chine</option>
+        <option value="japon">Japon</option>
+      </select>
+    </fieldset>
+
+    <fieldset>
+      <legend>Votre souhait</legend>
+      <p class="radio-group">
+        <input type="radio" name="souhait" value="riche" id="riche" />
+        <label for="riche">Être riche</label>
+
+        <input type="radio" name="souhait" value="celebre" id="celebre" />
+        <label for="celebre">Être célèbre</label>
+
+        <input type="radio" name="souhait" value="intelligent" id="intelligent" />
+        <label for="intelligent">Être <strong>encore</strong> plus intelligent</label>
+
+        <input type="radio" name="souhait" value="autre" id="autre" />
+        <label for="autre">Autre...</label>
+      </p>
+
+      <label for="precisions">Si "Autre", veuillez préciser :</label>
+      <textarea name="precisions" id="precisions" rows="4"></textarea>
+    </fieldset>
+
+    <fieldset>
+      <legend>Amélioration du site</legend>
+      <label for="ameliorer">Comment pensez-vous que je pourrais améliorer mon site ?</label>
+      <textarea name="ameliorer" id="ameliorer" rows="4"></textarea>
+    </fieldset>
+
+    <input type="submit" value="Envoyer" />
+
+  </form>
+
+</body>
+</html>

@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mon Site Web - Amen DANGBENON</title>
+  <style>
+    /* === STYLE GLOBAL === */
+    body {
+      margin: 0;
+      padding: 5PX 20PX;
+      background: linear-gradient(135deg, #ffe6f0, #ffd6e8); /* fond rose pastel */
+      font-family: "Segoe UI", Arial, sans-serif;
+      color: #5a2a3c;
+    }
+
+    /* === TABLE EN-TÊTE === */
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-bottom: 30px;
+    }
+
+    td {
+      vertical-align: middle;
+    }
+
+    /* === IMAGES AVEC EFFET 3D === */
+    img {
+      border-radius: 15px;
+      box-shadow: 0 10px 15px rgba(0,0,0,0.2);
+      transition: transform 0.4s ease, box-shadow 0.4s ease;
+    }
+
+    img:hover {
+      transform: scale(1.08) rotate3d(1,1,0,5deg);
+      box-shadow: 0 20px 30px rgba(0,0,0,0.3);
+      cursor: pointer;
+    }
+
+    /* === TITRE PRINCIPAL === */
+    strong {
+      font-size: 28px;
+      text-shadow: 1px 1px 2px rgba(0,0,0,0.1);
+    }
+
+    .nom-bleu a {
+      color: #e75480; /* rose vif pour style féminin */
+      text-decoration: none;
+      font-weight: bold;
+      font-size: 18px;
+      transition: transform 0.3s, color 0.3s;
+    }
+
+    .nom-bleu a:hover {
+      color: #c63b67;
+      transform: scale(1.1);
+    }
+
+    /* === TITRES DES SECTIONS === */
+    h2 {
+      border-left: 4px solid #c63b67;
+      padding-left: 10px;
+      margin-top: 30px;
+    }
+
+    /* === PARAGRAPHES ET LISTES === */
+    p, ul {
+      margin-left: 40px;
+      line-height: 1.7;
+    }
+
+    ul {
+      list-style-type: square;
+    }
+
+    li {
+      margin-bottom: 5px;
+    }
+
+    /* === PHOTO CENTRÉE === */
+    .photo-centree {
+      display: block;
+      margin: 20px auto;
+      border-radius: 50%;
+      border: 4px solid #ffe6f0;
+      box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+      width: 150px;
+      height: 150px;
+      object-fit: cover;
+      transition: transform 0.4s ease, box-shadow 0.4s ease;
+    }
+
+    .photo-centree:hover {
+      transform: scale(1.05);
+      box-shadow: 0 12px 25px rgba(0,0,0,0.3);
+    }
+
+    /* === EMAIL ET LIENS === */
+    .email a {
+      color: #e75480;
+      text-decoration: none;
+      font-weight: bold;
+      transition: transform 0.3s, color 0.3s;
+    }
+
+    .email a:hover {
+      color: #c63b67;
+      transform: scale(1.1);
+    }
+  </style>
+</head>
+<body>
+
+  <!-- === EN-TÊTE AVEC LOGOS ET TITRE === -->
+  <header>
+    <table>
+      <tr>
+        <td align="left">
+          <a href="https://enseignementsuperieur.gouv.bj/" target="_blank">
+            <img src="ministry-of-secondary-education-and-technical-and-vocational-training-benin-180146.jpg" 
+                 alt="MESRT" width="50">
+          </a>
+        </td>
+
+        <td align="center">
+          <strong>BIENVENUE SUR MON SITE WEB!</strong><br>
+          <em class="nom-bleu"><a href="#extrait">Amen DANGBENON</a></em>
+        </td>
+
+        <td align="right">
+          <a href="https://www.pigier-benin.com" target="_blank">
+            <img src="pigier-benin.png" alt="Pigier Benin" width="50">
+          </a>
+        </td>
+      </tr>
+    </table>
+
+    <!-- Photo centrée style féminin -->
+    </header>
+
+</body>
+</html>
